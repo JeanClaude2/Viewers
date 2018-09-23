@@ -4,6 +4,11 @@ Package.describe({
     version: '0.0.1'
 });
 
+Npm.depends({
+    'dicomweb-client': '0.3.0',
+    'url-parse': '1.4.3'
+});
+
 Package.onUse(function(api) {
     api.versionsFrom('1.6');
 
@@ -21,7 +26,6 @@ Package.onUse(function(api) {
         'ohif:log',
         'ohif:servers',
         'ohif:dicom-services',
-        'ohif:dicomweb-client',
         'ohif:viewerbase',
         'ohif:wadoproxy'
     ]);
